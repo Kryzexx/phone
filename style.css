@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-img {
+    width: fit-content;
+    height: 480px;
+}
+
+.percentages {
+    position: relative;
+    bottom: 485px;
+    width: 100%;
+    background-color: black;
+    height: 25px;
+    color: white;
+    display: flex;
+}
+
+.magticom {
+    position: relative;
+    left: 2px;
+    top: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.attitude {
+    position: relative;
+    left: 160px;
+    top: 4px;
+}
+
+.wifi {
+    position: relative;
+    left: 150px;
+    top: 4px;
+}
+
+.time-cont {
+    position: relative;
+    bottom: 450px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold; 
+}
+
+.date {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.applications {
+    /* border: 2px solid yellow; */
+    position: relative;
+    width: fit-content;
+    width: 255px;
+    bottom: 430px;
+    display: flex;
+    gap: 60px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    transition: 1s;
+    animation: toRight 1s ease;
+    display: none;
+}
+
+/* APPLICATIONS */
+
+#app {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.call {
+    background: linear-gradient(135deg, #EB8D00 0%, #FF9A03 49.63%, #CA7900 100%);
+} 
+
+.mobbank {
+    background: linear-gradient(135deg, #63B100 0%, #70C800 49.63%, #60AB01 100%);
+}
+
+.gps {
+    background: linear-gradient(135deg, #C4C800 0%, #DDE100 49.63%, #B4AC00 100%);
+}
+
+.toprich {
+    background: linear-gradient(135deg, #9E9919 0%, #C4BD1F 49.63%, #9E9919 100%);
+}
+
+.quest {
+    background: linear-gradient(135deg, #99004A 0%, #FF2990 49.63%, #AB0153 100%);
+}
+
+.report {
+    background: linear-gradient(135deg, #E30152 0%, #FF337C 49.63%, #960036 100%);
+}
+
+.ad {
+    background: linear-gradient(135deg, #930096 0%, #C600CA 49.63%, #930096 100%);
+}
+
+.family {
+    background: linear-gradient(135deg, #0B47DF 0%, #4959BE 49.63%, #004DC0 100%);
+}
+
+.skills {
+    background: linear-gradient(135deg, #0066C5 0%, #0274DE 49.63%, #005EB5 100%);
+}
+
+.downapps {
+    width: 80%; 
+    height: 50px; 
+    background: #FFFFFF;
+    opacity: 0.90;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+    bottom: 380px;
+    left: 25px;
+    display: flex;
+    padding: 2px;
+    gap: 15px;
+    transition: 1s;
+    animation: Appear 1s ease;
+    display: none;
+}
+
+.downapps div {
+    margin-top: 2px;
+    opacity: 1;
+}
+
+.messages {
+    background: rgb(204, 204, 203);
+}
+
+.spotify {
+    background: #000000;
+}
+
+.camera {
+    background: #919191;
+}
+
+@keyframes toRight {
+    from {
+        left: -20px;
+        opacity: 0.1;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.90;
+    }
+}
+
+.swipe {
+    width: 80%;
+    color: white;
+    font-size: 23px;
+    border-bottom: 2px solid white;
+    position: relative;
+    left: 25px;
+    bottom: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.swipe span {
+    animation: wiggle 1.5s ease-in infinite;
+    position: relative;
+    bottom: 20px;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
